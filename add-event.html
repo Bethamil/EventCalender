@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <script type="module" src="JS/main.js" defer></script>
+    <title>Add event</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="add-event.html">Add Event</a>
+    </div>
+    <div class="container">
+        <h1>Add event</h1>
+    <div id="event-form-container">
+        <form id="event-form">
+            <label for="event-type" class="required">Event Type</label>
+            <select name="event-type" id="event-type" >
+                <option value="Hackathon">Hackathon</option>
+                <option value="Webinar">Webinar</option>
+                <option value="Javascript training">Javascript training</option>
+            </select>
+            
+            <label for="event-title"class="required">Event Title</label>
+            <input type="text" id="event-title" name="event-title">
+            
+            <label for="event-date" class="required">Event Date</label>
+            <input type="date" id="event-date" name="event-date">
+            
+            <label for="event-start-time">Event Start Time</label>
+            <input type="time" id="event-start-time" name="event-start-time">
+            
+            <label for="event-end-time">Event End Time</label>
+            <input type="time" id="event-end-time" name="event-end-time">
+            
+            <label for="event-location">Event Location</label>
+            <input type="text" id="event-location" name="event-location">
+            
+            <label for="event-url">Event URL</label>
+            <input type="url" id="event-url" name="event-url">
+            
+            <label for="event-description">Event Description</label>
+            <textarea id="event-description" name="event-description" rows="6"></textarea>
+            
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+</div>
+</body>
+</html>
